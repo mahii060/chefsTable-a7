@@ -1,7 +1,8 @@
 import { CgProfile, } from "react-icons/cg";
+
 const Header = () => {
     return (
-        <div className="max-w-7xl md:mx-auto px-4 md:px-0  my-5">
+        <div className="max-w-7xl md:mx-auto px-4 md:px-0 my-5">
             <div className="md:flex  justify-between items-center">
                 <h3 className="text-2xl text-violet-700 font-extrabold tracking-wide">Chefs Table</h3>
                 <ul className="md:flex gap-8">
