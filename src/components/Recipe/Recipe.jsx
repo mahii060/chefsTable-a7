@@ -6,7 +6,7 @@ const Recipe = ({ recipe, handleCooking }) => {
     const { recipe_id, recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
 
     return (
-        <div className='flex flex-col border-2 rounded-2xl p-6'>
+        <div className='flex flex-col border-2 rounded-2xl p-6 overflow-auto'>
             <img className='w-96 h-64 object-cover rounded-2xl' src={recipe_image} alt="" />
             <h2 className="text-xl font-semibold my-6">{recipe_name}</h2>
             <p className='text-gray-700 text-lg'>{short_description}</p>

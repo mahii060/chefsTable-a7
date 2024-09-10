@@ -7,6 +7,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [cookingList, setCookingList] = useState([]);
+    const [currentlyCooking, setCurrentlyCooking] = useState([]);
+    const [time, setTime] = useState(0);
+    const [calories, setCalories] = useState(0);
 
     useEffect(() => {
         fetch('recipes.json')
@@ -24,6 +27,23 @@ const Recipes = () => {
         else {
             toast.error("This recipe is already the in list!")
         }
+    };
+
+    const handleCurrentlyCooking = (recipe, preparingTime, foodCalories) => {
+        // Adding to currently cooking list
+        const newCurrentlyCooking = [...currentlyCooking, recipe];
+        setCurrentlyCooking(newCurrentlyCooking)
+        toast.success("Successfully added to the currently cooking list")
+
+        // Adding the preparing time
+        setTime(time + preparingTime)
+
+        // Adding the calories
+        setCalories(calories + foodCalories)
+
+        // Filtering the cooking list
+        const newCookingList = cookingList.filter(cookingItem => cookingItem.recipe_id !== recipe.recipe_id);
+        setCookingList(newCookingList)
     }
 
     return (
@@ -32,8 +52,8 @@ const Recipes = () => {
                 <h1 className="text-4xl font-bold">Our Recipes</h1>
                 <p className="text-xl text-gray-600 mt-6 font-normal">Explore our collection of delectable recipes, each crafted to delight your taste buds. From savory dishes to sweet treats,<br /> discover easy-to-follow instructions and fresh ingredients for a perfect meal every time.</p>
             </div>
-            <div className="flex gap-5 recipes-container">
-                <div className="w-3/5 grid grid-cols-2 gap-4">
+            <div className="md:flex gap-5 recipes-container">
+                <div className="md:w-3/5 grid md:grid-cols-2 gap-4">
                     {
                         recipes.map((recipe) => <Recipe
                             key={recipe.recipe_id}
@@ -42,8 +62,15 @@ const Recipes = () => {
                         />)
                     }
                 </div>
-                <div className="w-2/5">
-                    <CookingDetails cookingList={cookingList} />
+                <div className="md:w-2/5">
+                    <CookingDetails
+                        cookingList={cookingList}
+                        handleCurrentlyCooking={handleCurrentlyCooking}
+                        currentlyCooking={currentlyCooking}
+                        time={time}
+                        calories={calories}
+
+                    />
                 </div>
             </div>
         </div>
