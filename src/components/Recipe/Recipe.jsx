@@ -20,11 +20,11 @@ const Recipe = ({ recipe, handleCooking }) => {
             <hr className='border border-gray-400 my-4' />
             <div className="flex justify-between items-center mb-4">
                 <div className='flex gap-2 items-center justify-center'>
-                    <span><HiClock className='size-7 text-amber-600' /></span>
+                    <span><HiClock className='size-7 text-violet-600' /></span>
                     <span className='text-lg text-gray-500'>{preparing_time} minutes</span>
                 </div>
                 <div className='flex gap-2 items-center justify-center'>
-                    <span><FaFireFlameCurved className='size-7 text-amber-500' /></span>
+                    <span><FaFireFlameCurved className='size-7 text-red-500' /></span>
                     <span className='text-lg text-gray-500'>{calories} calories</span>
                 </div>
             </div>
