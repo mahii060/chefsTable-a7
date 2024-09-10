@@ -1,0 +1,98 @@
+[
+    {
+        "recipe_id": "r1a2b3",
+        "recipe_name": "Grilled Chicken with Basil",
+        "recipe_image": "https://images.pexels.com/photos/5713761/pexels-photo-5713761.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "A flavorful grilled chicken recipe infused with fresh basil and soy sauce.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "400 g mushroom",
+            "2 tbsp olive oil",
+            "1 tsp garlic powder"
+        ],
+        "preparing_time": 30,
+        "calories": 320
+    },
+    {
+        "recipe_id": "a1b2c3",
+        "recipe_name": "Mushroom Risotto",
+        "recipe_image": "https://images.pexels.com/photos/15058965/pexels-photo-15058965/free-photo-of-a-plate-of-chicken-and-rice-with-tomatoes-and-herbs.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "A creamy and hearty Italian dish made with mushrooms and arborio rice.",
+        "ingredients": [
+            "400 g mushrooms",
+            "200 g arborio rice",
+            "500 ml vegetable broth",
+            "100 ml white wine",
+            "1 onion",
+            "50 g parmesan cheese"
+        ],
+        "preparing_time": 45,
+        "calories": 380
+    },
+    {
+        "recipe_id": "r4d5e6",
+        "recipe_name": "Spaghetti Carbonara",
+        "recipe_image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "A classic Italian pasta dish with eggs, parmesan, and pancetta.",
+        "ingredients": [
+            "200 g spaghetti",
+            "100 g pancetta",
+            "2 large eggs",
+            "50 g parmesan cheese",
+            "1 garlic clove",
+            "Black pepper"
+        ],
+        "preparing_time": 25,
+        "calories": 420
+    },
+    {
+        "recipe_id": "p7q8r9",
+        "recipe_name": "Vegetable Stir Fry",
+        "recipe_image": "https://images.pexels.com/photos/15797991/pexels-photo-15797991/free-photo-of-stir-fried-zucchini-with-eggs-in-a-white-dish-in-a-bowl-on-the-set-of-group-plates-thai-food-top-view-vertical-view.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "A quick and healthy stir fry with fresh vegetables and a soy-based sauce.",
+        "ingredients": [
+            "150 g broccoli",
+            "100 g bell peppers",
+            "100 g carrots",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "1 tsp ginger"
+        ],
+        "preparing_time": 20,
+        "calories": 200
+    },
+    {
+        "recipe_id": "x1y2z3",
+        "recipe_name": "Avocado Toast with Egg",
+        "recipe_image": "https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "A simple and nutritious breakfast with creamy avocado and a poached egg.",
+        "ingredients": [
+            "1 avocado",
+            "2 slices whole grain bread",
+            "1 egg",
+            "Salt to taste",
+            "Black pepper",
+            "Chili flakes"
+        ],
+        "preparing_time": 10,
+        "calories": 250
+    },
+    {
+        "recipe_id": "f9g8h7",
+        "recipe_name": "Beef Tacos",
+        "recipe_image": "https://images.pexels.com/photos/27365279/pexels-photo-27365279/free-photo-of-mexican-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "short_description": "Delicious beef tacos with fresh vegetables and a tangy taco sauce.",
+        "ingredients": [
+            "300 g ground beef",
+            "4 taco shells",
+            "50 g lettuce",
+            "1 tomato",
+            "50 g cheddar cheese",
+            "2 tbsp taco sauce"
+        ],
+        "preparing_time": 15,
+        "calories": 360
+    }
+]
