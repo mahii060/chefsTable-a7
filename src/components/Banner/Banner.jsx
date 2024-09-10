@@ -5,7 +5,7 @@ const Banner = () => {
             <div className="h-[576px] bg-no-repeat bg-cover bg-center rounded-2xl flex justify-center items-center relative"
                 style={{ backgroundImage: `url(${chef})` }}>
                 {/* Background overlay */}
-                <div className="absolute inset-0 bg-black opacity-70 rounded-2xl"></div>
+                <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
 
                 {/* Content */}
                 <div className="relative space-y-12 z-10">
